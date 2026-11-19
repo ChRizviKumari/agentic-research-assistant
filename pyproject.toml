@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-research-assistant"
+version = "0.1.0"
+description = "A ReAct-style tool-using agent framework with typed tools, memory, budgets, tracing and an eval harness."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Chintada Rizvi Kumari" }]
+dependencies = ["pydantic>=2.0"]
+
+[project.optional-dependencies]
+anthropic = ["anthropic"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+research-agent-eval = "research_agent.evals:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+research_agent = ["data/corpus/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

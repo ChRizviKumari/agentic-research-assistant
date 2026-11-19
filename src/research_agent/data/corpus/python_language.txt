@@ -1,0 +1,2 @@
+Python programming language
+Python is a high-level, general-purpose programming language created by Guido van Rossum. It was first released in 1991. Python emphasises code readability and uses significant indentation. Python 3.0 was released in December 2008.

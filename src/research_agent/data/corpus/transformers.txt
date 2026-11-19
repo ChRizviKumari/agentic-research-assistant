@@ -1,0 +1,2 @@
+Transformer architecture
+The Transformer is a neural network architecture introduced in the 2017 paper "Attention Is All You Need" by researchers at Google. It relies on self-attention instead of recurrence and underpins most modern large language models.
